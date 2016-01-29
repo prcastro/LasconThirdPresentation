@@ -44,8 +44,6 @@
 					<h1>Modeling the role of oscillations in learning</h1>
 				</section>
 
-				<section data-background="images/CA1theta.png" data-background-size="500px"></section>
-
 				<section data-background="images/mit.png" data-background-size="500px"></section>
 
 				<section data-background="images/masquelier.png" data-background-size="700px"></section>
@@ -60,14 +58,7 @@
 
 				<section data-background="images/activations.png" data-background-size="700px"></section>
 
-				<section data-background="images/ouractivations.png" data-background-size="700px"></section>
-
-				<section data-background="images/actzoom.png" data-background-size="700px">
-					<h2>Zoom into pattern</h2>
-					<br></br>
-					<br></br>
-					<br></br>
-				</section>
+				<section><h2>The task</h2></section>
 
 				<section>
 					<h2>Before learning</h2>
@@ -103,7 +94,7 @@
 				<br></br>
 				How the <b>duration of pattern presentation</b> affects learning in this model?</section>
 
-				<section><h2>Default parameters</h2></section>
+				<!-- <section><h2>Default parameters</h2></section> -->
 
 				<section>
 					<div align = "center">
@@ -117,12 +108,12 @@
 					</div>
 				</section>
 
-				<section><h2>Enhanced STDP parameter</h2>
+				<!-- <section><h2>Enhanced STDP parameter</h2>
 				<br></br>
 				<br></br>
-				\[a^+ \exp\left(\frac{t_j - t_i}{\tau^+}\right)\]</section>
+				\[a^+ \exp\left(\frac{t_j - t_i}{\tau^+}\right)\]</section> -->
 
-				<section><h2>Stronger pattern</h2></section>
+				<!-- <section><h2>Stronger pattern</h2></section> -->
 
 				<section><h3>Question #2</h3>
 				<br></br>
@@ -131,18 +122,12 @@
 
 				<section data-background="images/model_multi.png" data-background-size="700px"></section>
 
-				<section>
-					<div align = "center">
-						<object data="images/multpats.svg" type="image/svg+xml"></object>
-					</div>
-				</section>
-
 				<section>What's the probability of this scenario?</section>
 
 				<section>
 					\[p_n(\varepsilon) = \text{Pr}(d_{(n)} - d_{(1)} \leq \varepsilon) =
-					\int_{-\infty}^\varepsilon \text{Pr}(d_{(n)} - d_{(1)} = \varepsilon)d\varepsilon\]
-					\[\int_{-\infty}^\varepsilon \text{Pr}(X = \varepsilon)d\varepsilon \]
+					 \int_{-\infty}^\varepsilon \text{Pr}(d_{(n)} - d_{(1)} = \varepsilon)d\varepsilon\]
+					\[=\int_{-\infty}^\varepsilon \text{Pr}(X = \varepsilon)d\varepsilon \]
 
 					<br></br>
 					<br></br>
@@ -150,8 +135,42 @@
 				</section>
 
 				<section>
+					\[p(\varepsilon) = \sum_n^N \binom{n}{N} p_i(\varepsilon)^i (1 - p_i(\varepsilon))^{N-i} \approx 0\]
+				</section>
+
+				<section>
+					<div align = "center">
+						<object data="images/probs.svg" type="image/svg+xml"></object>
+					</div>
+				</section>
+
+				<section>
+					<div align = "center">
+						<object data="images/multpats.svg" type="image/svg+xml"></object>
+					</div>
+				</section>
+
+				<section data-background="images/red.png" data-background-size="700px"></section>
+				<section data-background="images/blue.png" data-background-size="700px"></section>
+				<section data-background="images/green.png" data-background-size="700px"></section>
+
+				<section><h3>Without delays</h3></section>
+
+				<section data-background="images/coco.png" data-background-size="700px"></section>
+
+				<section><h3>If this is present in the brain, these delays can't be random</h3></section>
+				<section data-background="images/CA1theta.png" data-background-size="500px"></section>
+
+				<section><h2>Interneurons</h2></section>
+
+				<section>
 					<h2>Conclusions</h2>
-					
+					<ul>
+						<li><p class="fragment"><b>Reproducibility</b> is crucial</p></li>
+						<li><p class="fragment">The <b>duration of pattern matters</b> for learning in this model</p></li>
+						<li><p class="fragment">A similar model can <b>learn more than one pattern</b> with the introduction of <b>delays</b></p></li>
+						<li><p class="fragment">These delays can't be uniformly distributed</p></li>
+					</ul>
 				</section>
 
 				<section><h1>Questions?</h1></section>
